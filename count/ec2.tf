@@ -1,4 +1,4 @@
-resource "aws_instance"  {
+resource "aws_instance" "backend" {
     count = 3
     ami = var.ami_id # left side and right side names need not to be same
     instance_type = "t3.micro"
